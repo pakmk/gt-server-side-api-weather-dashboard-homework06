@@ -1,0 +1,27 @@
+.weather {
+    background-color: grey;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+}
+
+button {
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b7dda;
+}
