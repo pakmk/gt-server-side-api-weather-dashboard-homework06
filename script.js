@@ -18,7 +18,13 @@ $(document).ready(function () {
 
       var city = response.name;
       //   console.log(city);
-      $("#today").append($("<h1>" + city + "</h1>"));
+      $("#today").append($("<h1>" + city +  moment().format("(MM/DD/YYYY)") + "</h1>"));
+
+      var weatherIcon = response.weather[0].icon;
+      // console.log(weatherIcon);
+      var icon = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
+      var imgEl = $("<img>").attr("src", icon);
+      $("#today").append(imgEl);
 
       var temp = response.main.temp;
       //   console.log(temp);
@@ -31,17 +37,7 @@ $(document).ready(function () {
       var windSpeed = response.wind.speed;
       //   console.log(windSpeed);
       $("#today").append($("<h5>" + windSpeed + " MPH" + "</h5>"));
-
-      var weatherIcon = response.weather[0].icon;
-      // console.log(weatherIcon);
-      var icon = "https://openweathermap.org/img/w/" + weatherIcon + ".png";
-      var img = $("<img>").attr("src", icon);
-      $("#today").append(img);
-
-      // var currentDate = moment().subtract(10, "days").calendar();
-      // console.log(currentDate);
-      // $("#today").append(currentDate);
-
+      
       var latitude = response.coord.lat;
       // console.log(latitude);
       var longitude = response.coord.lon;
@@ -61,7 +57,7 @@ $(document).ready(function () {
         // console.log(response);
         var uvData = response.value;
         // console.log(uvData);
-        $("#today").append(uvData);
+        $("#today").append($(uvData));
       });
     });
 
@@ -77,6 +73,7 @@ $(document).ready(function () {
       // console.log(response);
       for (i = 0; i < response.list.length; i++);
       // console.log(response.list);
+  
       
     });
   });

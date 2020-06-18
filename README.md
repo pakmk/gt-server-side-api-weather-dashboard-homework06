@@ -19,7 +19,7 @@ Weather Dashboard Website using server-side APIs. It is designed to meet the cri
 
 ## Usage
 
-[Deployed Weather Dashboard Website]()
+[Deployed Weather Dashboard Website](https://pakmk.github.io/gt-server-side-api-weather-dashboard-homework06/)
 
 ![Weather Dashboard Website](.\Assets\06-server-side-apis-homework-demo.png)
 
