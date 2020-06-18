@@ -1,8 +1,8 @@
 .weather {
-    background-color: grey;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    color: white;
+  background-color: grey;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  color: white;
 }
 
 input {
@@ -24,4 +24,13 @@ button {
 
 button:hover {
   background: #0b7dda;
+}
+
+.jumbotron {
+  background-color: white;
+  padding: 15px 15px 15px 15px;
+}
+
+#searchBar {
+  padding: 15px 15px 15px 15px;
 }
